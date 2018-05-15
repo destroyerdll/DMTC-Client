@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/opentotification"
+        android:summaryOff="@string/exitnotification"
+        android:title="@string/title_note" />
+
+    <PreferenceScreen
+    android:key="about"
+    android:title="Про програму">
+        </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="exit"
+        android:title="Вийти з клієнту">
+    </PreferenceScreen>
+
+</PreferenceScreen>
