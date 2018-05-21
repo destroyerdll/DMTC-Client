@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_dmtc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/logo"
@@ -19,19 +19,19 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_dmtc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/image_dmtc"
         android:layout_marginTop="15dp"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/image_dmtc"
+        android:layout_toRightOf="@+id/image_dmtc"
         android:text="@string/dmtc"
         android:textColor="@color/colorText"
         android:textSize="20sp" />
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/image_instagram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -40,64 +40,64 @@
         app:srcCompat="@drawable/instagram" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/image_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/facebook"
-        android:layout_toLeftOf="@+id/imageButton1"
-        android:layout_toStartOf="@+id/imageButton1"
-        android:layout_alignBottom="@+id/imageButton1"
-        android:layout_alignTop="@+id/imageButton1" />
+        android:layout_alignBottom="@+id/image_instagram"
+        android:layout_alignTop="@+id/image_instagram"
+        android:layout_toLeftOf="@+id/image_instagram"
+        android:layout_toStartOf="@+id/image_instagram"
+        app:srcCompat="@drawable/facebook" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/image_youtube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton1"
-        android:layout_toRightOf="@id/imageButton1"
+        android:layout_alignBottom="@+id/image_instagram"
+        android:layout_toRightOf="@id/image_instagram"
         android:contentDescription="@string/app_name"
-        app:srcCompat="@drawable/youtube" android:layout_toEndOf="@id/imageButton1" />
+        app:srcCompat="@drawable/youtube" android:layout_toEndOf="@id/image_instagram" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/image_rozklad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/image_dmtc"
         android:layout_marginEnd="29dp"
         android:layout_marginRight="29dp"
         android:layout_marginTop="59dp"
-        android:layout_toLeftOf="@+id/imageButton3"
-        android:layout_toStartOf="@+id/imageButton3"
+        android:layout_toLeftOf="@+id/image_youtube"
+        android:layout_toStartOf="@+id/image_youtube"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/rozklad" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/image_archive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton5"
-        android:layout_alignStart="@+id/imageButton5"
-        android:layout_alignTop="@+id/imageButton7"
+        android:layout_alignLeft="@+id/image_settings"
+        android:layout_alignStart="@+id/image_settings"
+        android:layout_alignTop="@+id/image_rozklad"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/lekciya" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/image_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton4"
-        android:layout_toEndOf="@+id/imageButton6"
-        android:layout_toRightOf="@+id/imageButton6"
+        android:layout_below="@+id/image_archive"
+        android:layout_toEndOf="@+id/image_info"
+        android:layout_toRightOf="@+id/image_info"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/settings" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/image_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton7"
-        android:layout_alignStart="@+id/imageButton7"
-        android:layout_below="@+id/imageButton7"
+        android:layout_alignLeft="@+id/image_rozklad"
+        android:layout_alignStart="@+id/image_rozklad"
+        android:layout_below="@+id/image_rozklad"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/information" />
 

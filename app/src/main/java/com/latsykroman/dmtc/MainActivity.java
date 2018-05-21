@@ -9,9 +9,9 @@ import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    ImageView sitedmtc;
-    ImageButton ImageButton1, ImageButton2, ImageButton3, ImageButton4, ImageButton5, ImageButton6, ImageButton7;
-    Intent inst, fb, yt, fond, rozkld, about, set, dmtc;
+    private ImageView sitedmtc;
+    private ImageButton block_facebook, block_youtube, block_instagram, block_archive, block_settings, block_info, block_rozklad;
+    private Intent inst, fb, yt, fond, rozkld, about, set;
 
 
     @Override
@@ -19,22 +19,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        ImageButton1 = (ImageButton) findViewById(R.id.imageButton1);
-        ImageButton2 = (ImageButton) findViewById(R.id.imageButton2);
-        ImageButton3 = (ImageButton) findViewById(R.id.imageButton3);
-        ImageButton4 = (ImageButton) findViewById(R.id.imageButton4);
-        ImageButton5 = (ImageButton) findViewById(R.id.imageButton5);
-        ImageButton6 = (ImageButton) findViewById(R.id.imageButton6);
-        ImageButton7 = (ImageButton) findViewById(R.id.imageButton7);
-        sitedmtc = (ImageView) findViewById(R.id.imageView);
-        ImageButton1.setOnClickListener(this);
+        block_instagram = (ImageButton) findViewById(R.id.image_instagram);
+        block_facebook = (ImageButton) findViewById(R.id.image_facebook);
+        block_youtube = (ImageButton) findViewById(R.id.image_youtube);
+        block_archive = (ImageButton) findViewById(R.id.image_archive);
+        block_settings = (ImageButton) findViewById(R.id.image_settings);
+        block_info = (ImageButton) findViewById(R.id.image_info);
+        block_rozklad = (ImageButton) findViewById(R.id.image_rozklad);
+        sitedmtc = (ImageView) findViewById(R.id.image_dmtc);
+        block_archive.setOnClickListener(this);
         sitedmtc.setOnClickListener(this);
-        ImageButton2.setOnClickListener(this);
-        ImageButton3.setOnClickListener(this);
-        ImageButton4.setOnClickListener(this);
-        ImageButton5.setOnClickListener(this);
-        ImageButton6.setOnClickListener(this);
-        ImageButton7.setOnClickListener(this);
+        block_info.setOnClickListener(this);
+        block_rozklad.setOnClickListener(this);
+        block_settings.setOnClickListener(this);
+        block_instagram.setOnClickListener(this);
+        block_facebook.setOnClickListener(this);
+        block_youtube.setOnClickListener(this);
 
         if (getIntent().getBooleanExtra("EXIT", false))
         {
@@ -44,31 +44,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (v==ImageButton1){
+        if (v==block_instagram){
             inst = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/dmtccollege/"));
             startActivity(inst);
 
-        }else if(v==ImageButton2){
+        }else if(v==block_facebook){
             fb = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/dmtc.college.page/"));
             startActivity(fb);
 
-        }else if(v==ImageButton3){
+        }else if(v==block_youtube){
             yt = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/channel/UCLLJ443RzJVN5JLnutKHjyw"));
             startActivity(yt);
 
-        }else if(v==ImageButton4){
+        }else if(v==block_archive){
             fond = new Intent(MainActivity.this, ScoreActivity.class);
             startActivity(fond);
 
-        }else if(v==ImageButton5){
+        }else if(v==block_settings){
             set = new Intent(MainActivity.this, MyPreferenceSettings.class);
             startActivity(set);
 
-        }else if(v==ImageButton6){
+        }else if(v==block_info){
             about = new Intent(MainActivity.this, AboutCollege.class);
             startActivity(about);
 
-        }else if(v==ImageButton7){
+        }else if(v==block_rozklad){
             rozkld = new Intent(MainActivity.this, list.class);
             startActivity(rozkld);
         }
